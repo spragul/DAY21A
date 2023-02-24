@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THIRUKKURAL</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <style>
+    .continar {
+      display: flex;
+      border: 10px solid green;
+      background-color: burlywood;
+      margin: 20px;
+      padding: 10%;
+      width: auto;
+      height: 625px;
+
+    }
+
+    .title {
+      color: brown;
+      position: fixed;
+      top: 30px;
+      left: 35%;
+      /* text-align: center; */
+    }
+
+    .data-card {
+      color: blue;
+
+    }
+
+    .image {
+      opacity: 50%;
+      width: 400px;
+      height: 500px;
+      position: fixed;
+      top: 70px;
+      left: 30%;
+    }
+
+    .header {
+      position: fixed;
+      top: 35px;
+      right: 35px;
+    }
+
+    .pagenation_condinar {
+      position: fixed;
+      left: 30%;
+      bottom: 30px;
+    }
+
+    span {
+      color: darkblue;
+    }
+
+    .line1 {
+      padding: 30px;
+      margin: 20px;
+    }
+
+    .line1 {
+      padding: 30px;
+      margin: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="search_contioner">
+      <label for="thirukkural_no">Thirukkural No:</label>
+      <input type="number" name="search_data" id="thirukkural_no" placeholder="Enter Thirukkural no">
+      <button class="btn_search">search</button>
+
+    </div>
+
+    <select class="form-select" onchange="selectlang()">
+      <option selected value="tamil">Tamil</option>
+      <option value="english">English</optio>
+    </select>
+
+
+  </div>
+  <div class="continar">
+    <div class="title_head">
+      <h1 class="title">THIRUKKURAL</h1>
+    </div>
+    <img class="image" src="Thiruvalluvar.png" alt="">
+
+    <div class="pagenation_condinar">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" id="previous_page" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" for="1" onclick="page_number(this)" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" for="2" onclick="page_number(this)" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" for="3" onclick="page_number(this)" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" for="4" onclick="page_number(this)" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" for="5" onclick="page_number(this)" href="#">5</a></li>
+          <li class="page-item"><a class="page-link" for="6" onclick="page_number(this)" href="#">6</a></li>
+          <li class="page-item"><a class="page-link" for="7" onclick="page_number(this)" href="#">7</a></li>
+          <li class="page-item"><a class="page-link" for="8" onclick="page_number(this)" href="#">8</a></li>
+          <li class="page-item"><a class="page-link" for="9" onclick="page_number(this)" href="#">9</a></li>
+          <li class="page-item"><a class="page-link" for="10" onclick="page_number(this)" href="#">10</a></li>
+          <li class="page-item"><a class="page-link" id="next_page">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
